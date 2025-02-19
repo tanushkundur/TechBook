@@ -53,8 +53,8 @@ jobs:
           name: build
           path: build
 
-      - name: Deploy to Netlify
+      - name: Deploy to Production
         run: |
-            npm install -g netlify-cli
-            netlify deploy --prod --dir=build --auth "${{ secrets.NETLIFY_AUTH_TOKEN }}"
+          echo "Deploying Techbook..."
+          # Add deployment commands (e.g., Firebase, Netlify, Vercel, or server deployment)
 
